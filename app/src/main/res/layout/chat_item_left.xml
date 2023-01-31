@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher"
+            />
+        <RelativeLayout
+            android:id="@+id/content_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/background_left"
+            >
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/show_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="sgfsdfsfdsd"
+                android:padding="4dp"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:id="@+id/time_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_message"
+                android:textSize="8dp"
+                android:textColor="#B5B2B2"
+                android:text="sdfasdfa"
+
+                />
+        </RelativeLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/show_message"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_toRightOf="@+id/profile_image"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:text="hello"-->
+<!--            android:padding="8dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_left"-->
+<!--            />-->
+        <TextView
+            android:id="@+id/txt_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="seen"
+            android:layout_below="@+id/content_message"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</RelativeLayout>

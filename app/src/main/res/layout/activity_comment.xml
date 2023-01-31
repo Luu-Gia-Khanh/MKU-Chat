@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/white"
+    tools:context=".CommentActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <EditText
+                android:id="@+id/add_comment"
+                android:layout_toRightOf="@+id/profile_image"
+                android:hint="Add Comment"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/btn_addcomment"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:src="@drawable/send_comment" />
+
+    </FrameLayout>
+
+</RelativeLayout>

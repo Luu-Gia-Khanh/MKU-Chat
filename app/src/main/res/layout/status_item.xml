@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/username"
+                android:text="UserName"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/image_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/time_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/image_profile"
+                android:layout_below="@+id/username"
+                android:text="3/6/2021 11:06"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/desc"
+            android:text="description"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/image_post"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_post_img"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/like"
+                android:src="@drawable/like"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:id="@+id/comment"
+                android:layout_toRightOf="@+id/like"
+                android:src="@drawable/comment"
+                android:layout_width="30dp"
+                android:layout_toEndOf="@+id/like"
+                android:layout_marginStart="10dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/txtlike"
+                android:text="10 like"
+                android:textSize="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/like"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/allcomment"
+                android:text="20 comment"
+                android:textSize="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/txtlike"
+                android:layout_below="@+id/comment"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#C3C0C0"
+            android:padding="5dp"
+            android:paddingBottom="10dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

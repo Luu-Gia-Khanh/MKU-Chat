@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/round_user"
+    android:layout_marginTop="3dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_toEndOf="@id/profile_image"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/btnfollow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Follow"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/btn_follow"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_toLeftOf="@+id/btnfollow"
+        android:layout_centerVertical="true"
+        android:id="@+id/sendMessage"
+        android:text="send message"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#BCB7B7"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

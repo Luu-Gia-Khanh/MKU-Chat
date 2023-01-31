@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "723845035530",
+    "project_id": "mkuchat-a68d4",
+    "storage_bucket": "mkuchat-a68d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723845035530:android:2904ed428d554d24b111f3",
+        "android_client_info": {
+          "package_name": "com.example.mku_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723845035530-vtqgk6jsf3fgpj169ls2s5d9mplcg9d2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mku_chat",
+            "certificate_hash": "91d3fffaf8d2542491725b21230cf517279d1912"
+          }
+        },
+        {
+          "client_id": "723845035530-45tdmib3hga5v8uuoedipul34f0uhm5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmlA9_Mu3Fk9uIMgIhkGMCr-nODgKzYWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723845035530-45tdmib3hga5v8uuoedipul34f0uhm5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

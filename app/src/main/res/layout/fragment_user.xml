@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.UserFragment">
+
+<!--    <EditText-->
+<!--        android:id="@+id/search_user"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/round_serch"-->
+<!--        android:textCursorDrawable="@drawable/cursor_color"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:hint="Search........."-->
+
+<!--        />-->
+    <RelativeLayout
+        android:id="@+id/re_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_serch">
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/search_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/username_icon"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Search..."
+            android:maxLines="1"
+            android:textColorHint="#ffff"
+            android:textColor="#ffffff"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="15sp" />
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/username_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/icon_search" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/re_search"
+        android:background="#FFFFFF"
+        android:layout_marginTop="0dp" />
+</RelativeLayout>

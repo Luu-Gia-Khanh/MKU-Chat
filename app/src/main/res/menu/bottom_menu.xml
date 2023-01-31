@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Chat"
+        android:icon="@drawable/icon_chat" />
+
+    <item
+        android:id="@+id/userFragment"
+        android:title="ListUser"
+        android:icon="@drawable/icon_listchat"
+        />
+    <item
+        android:id="@+id/showStatusFragment"
+        android:title="POST"
+        android:icon="@drawable/post"
+        />
+    <item
+        android:id="@+id/statusFragment"
+        android:title="status"
+        android:icon="@drawable/clock"
+        />
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/icon_profile_secu"
+        />
+</menu>

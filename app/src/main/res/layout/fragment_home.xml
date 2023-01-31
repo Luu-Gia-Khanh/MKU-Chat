@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+   <RelativeLayout
+       android:id="@+id/wellcome"
+       android:visibility="gone"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/img_logo"
+           android:visibility="gone"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/logo3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/wellcome_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="25dp"
+           android:layout_centerHorizontal="true"
+           android:fontFamily="@font/poppins_regular"
+           android:textColor="#1566e0"
+           android:layout_below="@+id/img_logo"
+           android:text="WelCome MKU Chat"
+           />
+
+   </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/wellcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>
